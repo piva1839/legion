@@ -1,0 +1,390 @@
+@font-face {
+	font-family: "GothaProMed";
+	src: url("../fonts/GothaProMed.otf") format("truetype");
+	src: local("GothaProMed"), url(../fonts/GothaProMed.otf);
+}
+
+@font-face {
+	font-family: "GothaProBol";
+	src: url("../fonts/GothaProBol.otf") format("truetype");
+	src: local("GothaProBol"), url(../fonts/GothaProBol.otf);
+}
+
+@font-face {
+	font-family: "GothaProReg";
+	src: url("../fonts/GothaProReg.otf") format("truetype");
+	src: local("GothaProReg"), url(../fonts/GothaProReg.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+	display: table;
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1260px;
+
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header {
+  padding-bottom: 230px;
+  
+  background: url("../img/mainbg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.header-inner {
+  padding: 0 40px 0 40px;
+}
+
+header a:hover {
+  color: #00d4ac;
+}
+
+.user-interface {
+  margin-bottom: 20px;
+}
+
+.user {
+  display: inline-block;
+  margin-left: 48%;
+  
+  list-style-type: none;
+}
+
+.signup {
+  position: relative;
+  
+  display: inline-block;
+  width: 220px;
+  height: 45px;
+  margin-right: -7px;
+  
+  background: url("../img/79.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  
+  color: #47b596;
+}
+
+.signup a {
+  display: inline-block;
+  padding: 12px 40px 15px 75px;
+  
+  font-family: "GothaProMed", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #47b596;
+  text-decoration: none;
+}
+
+.signup::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 45px;
+  
+  display: block;
+  width: 5px;
+  height: 5px;
+  
+  border-radius: 100px;
+  border: 3px solid #47b596; 
+}
+
+.enter {
+  position: relative;
+  
+  display: inline-block;
+  width: 220px;
+  height: 45px;
+  
+  background: url("../img/78.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  
+  color: #47b596;
+}
+
+.enter a {
+  display: inline-block;
+  padding: 12px 37px 15px 55px;
+  
+  font-family: "GothaProMed", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #47b596;
+  text-decoration: none;
+}
+
+.enter::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 25px;
+  
+  display: block;
+  width: 5px;
+  height: 5px;
+  
+  border-radius: 100px;
+  border: 3px solid #47b596; 
+}
+
+.main-menu {
+  margin-bottom: 150px;
+}
+
+.main-logo {
+  float: left;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 50px;
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  
+  list-style-type: none;
+}
+
+.menu a {
+  font-family: "GothaProBol", sans-serif;
+  font-size: 16px;
+  color: #47b596;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+
+header h2 {
+  margin-bottom: 35px;
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 30px;
+  color: #47b596;
+  text-transform: uppercase;
+}
+
+header p {
+  margin-bottom: 55px;
+  
+  font-family: "GothaProReg", sans-serif;
+  font-size: 17px;
+  color: #47b596;
+  text-transform: lowercase;
+}
+
+.header-more-button {
+  position: relative;
+  display: inline-block;
+  width: 247px;
+  height: 70px;
+  padding: 24px 0 0 80px;
+  
+  background: url("../img/headermorebtn.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 16px;
+  color: #47b596;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-more-button::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 43px;
+  
+  display: block;
+  width: 10px;
+  height: 13px;
+  
+  background: url("../img/headermoreicon.png") no-repeat;
+  background-position: center;
+}
+
+.promo-block {
+  position: relative;
+  
+  background: url("../img/promobg.jpg") repeat-y;
+  background-size: 100%;
+}
+
+.promo-block::before {
+  content: "";
+  position: absolute;
+  top: -38px;
+  left: 0;
+  
+  display: block;
+  width: 32%;
+  height: 39px;
+  
+  background: url("../img/decoration.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.promo-block-wrapper {
+  position: relative;
+  
+  padding: 80px 0 150px;
+}
+
+.promo-block-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+  display: block;
+  width: 100%;
+  height: 6px;
+  
+  background: url("../img/cursivedotted.png") repeat-x;
+}
+
+.promo-text {
+  max-width: 400px;
+  margin-bottom: 45px;
+}
+
+.promo-text p {
+  margin-bottom: 15px;
+  
+  font-family: "GothaProReg", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #1a1a18;
+}
+
+.download-pdf-button {
+  position: relative;
+  display: inline-block;
+  width: 284px;
+  height: 58px;
+  padding: 15px 0 0 57px;
+  
+  background: url("../img/downloadbg.png") no-repeat;
+  background-position: right bottom;
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 16px;
+  color: #47b596;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.download-pdf-button::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  
+  display: block;
+  width: 23px;
+  height: 30px;
+  
+  background: url("../img/pdficon.png") no-repeat;
+  background-position: center;
+}
+
+.promo-video {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  
+  width: 70%;
+  max-width: 760px;
+  height: auto;
+}
+
+.promo-video img {
+  width: 100%;
+  height: 100%;
+  
+  cursor: pointer;
+}
+
+.mission {
+  padding: 80px 0;
+}
+
+.mission h3 {
+  position: relative;
+  
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  margin-bottom: 
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: #47b596;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mission h3::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  
+  display: block;
+  width: 142px;
+  height: 10px;
+  
+  background: url("../img/64.png") no-repeat;
+}
+
+.mission h3::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+  
+  display: block;
+  width: 142px;
+  height: 10px;
+  
+  background: url("../img/64.png") no-repeat;
+  
+  transform: rotate(180deg);
+}
+
+.earth {
+  width: 100%;
+  max-width: 1260px;
+  
+  margin: 0 auto;
+}
+
+.earth img {
+  width: 100%;
+  height: auto;
+}
