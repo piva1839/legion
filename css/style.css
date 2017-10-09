@@ -16,6 +16,12 @@
 	src: local("GothaProReg"), url(../fonts/GothaProReg.otf);
 }
 
+@font-face {
+	font-family: "GothaProMed";
+	src: url("../fonts/GothaProMed.otf") format("truetype");
+	src: local("GothaProMed"), url(../fonts/GothaProMed.otf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -350,7 +356,7 @@ header p {
 }
 
 .mission {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
 }
 
 .mission h3 {
@@ -409,8 +415,8 @@ header p {
 }
 
 .project-news {
-	padding-top: 100px;
-	padding-bottom: 100px;
+  padding-top: 100px;
+	padding-bottom: 130px;
 	
 	background: url("../img/greenbg.jpg") repeat-x;
 	background-size: 100% cover;
@@ -560,7 +566,8 @@ h4 {
 .actual,
 .important {
 	display: inline-block;
-	padding: 8px 30px 8px 20px;
+  margin: 15px 0 50px;
+	padding: 8px 30px 8px 15px;
 	
 	background: url("../img/warningbg.png") no-repeat;
 	background-size: 100% 100%;
@@ -591,6 +598,29 @@ h4 {
   height: 39px;
   
   background: url("../img/39.png") no-repeat;
+}
+
+.warning-date {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  
+  font-family: "GothaProReg", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+	color: #c4e3e2;
+}
+
+.warning-description {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 600;
+	color: #ffffff;
+  
+  cursor: pointer;
 }
 
 .last-news {
@@ -647,3 +677,203 @@ h4 {
 	
 	cursor: pointer;
 }
+
+.last-projects {
+  position: relative;
+  
+  padding-top: 65px;
+}
+
+.last-projects::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  
+  display: block;
+  width: 100%;
+  height: 155px;
+  
+  background: url("../img/grafbg.png") repeat-y;
+  background-size: cover;
+}
+
+.last-projects::after {
+  content: "";
+  position: absolute;
+  bottom: -145px;
+  left: 0;
+  
+  display: block;
+  width: 65%;
+  height: 40px;
+  
+  background: url("../img/decoration.png") no-repeat;
+  background-size: 100% 100%;
+	
+	transform: scale(1, -1);
+}
+
+.last-projects h3 {
+  position: relative;
+  
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  
+  background: url("../img/grafbg.png") repeat-y;
+  
+  font-family: "GothaProBol", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: #47b596;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.last-projects h3::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  
+  display: block;
+  width: 142px;
+  height: 10px;
+  
+  background: url("../img/64.png") no-repeat;
+}
+
+.last-projects h3::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+  
+  display: block;
+  width: 142px;
+  height: 10px;
+  
+  background: url("../img/64.png") no-repeat;
+  
+  transform: rotate(180deg);
+}
+
+.last-projects ul {
+  list-style-type: none;
+  
+  margin-bottom: 110px;
+}
+
+.last-projects li {
+  display: inline-block;
+  width: calc(100% / 6);
+  margin-right: -4px;
+}
+
+.our-project {
+  display: block;
+  height: 92px;
+  
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.netcredit {
+  background: url("../img/evolve.png") no-repeat;
+  background-position: 30px;
+}
+
+.evolve {
+  background: url("../img/evolve.png") no-repeat;
+  background-position: -160px;
+}
+
+.icrypto {
+  background: url("../img/evolve.png") no-repeat;
+  background-position: -382px;
+}
+
+.queens {
+  background: url("../img/evolve.png") no-repeat;
+  background-position: -607px;
+}
+
+.kamcord {
+  background: url("../img/evolve.png") no-repeat;
+  background-position: -820px;
+}
+
+.lanzatech {
+  background: url("../img/evolve.png") no-repeat;
+  background-position: -1033px;
+}
+
+.our-project:hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.footer {
+  background: url("../img/contactbg.jpg") repeat-y;
+  background-size: 100% cover;
+  background-position: left;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer-inner {
+  padding: 110px 0 60px;
+}
+
+.footlogo {
+  float: left;
+  
+  width: 48%;
+}
+
+.footlogo img {
+  cursor: pointer;
+}
+
+.submenu {
+  float: left;
+  
+  width: 14%;
+}
+
+.contact {
+  float: right;
+  
+  width: 32%;
+}
+
+.info {
+  margin-bottom: 15px;
+  
+  font-family: "GothaProMed", sans-serif;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+  opacity: 0.95;
+}
+
+.submenu a {
+  font-family: "GothaProReg", sans-serif;
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  
+  opacity: 0.8;
+}
+
+.social {
+background: #236b60;
+}  
