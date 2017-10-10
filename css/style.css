@@ -187,6 +187,21 @@ header {
   text-transform: uppercase;
 }
 
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  
+  display: none;
+  
+  width: 100%;
+  min-height: 50px;
+  
+  background: #ffffff;
+  opacity: 0.7;
+}
+
 header h1 {
   margin-bottom: 15px;
 }
@@ -1062,6 +1077,10 @@ h4 {
 	.main-menu {
 		display: none;
 	}
+  
+  .burger-menu {
+    display: block;
+  }
 	
 	.promo-block::before,
 	.promo-block::after {
@@ -1175,6 +1194,21 @@ h4 {
 		max-width: 60%;
 		margin: 0 auto;
 	}
+  
+  .name-area {
+    width: 100%;
+    margin-bottom: 8px;
+    
+    background: url("../img/inputleft.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .male-area {
+    width: 100%;
+    
+    background: url("../img/inputright.png") no-repeat;
+    background-size: 100% 100%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1204,4 +1238,45 @@ h4 {
   header h2 {
     font-size: 24px;
   }
+  
+  .promo-block-wrapper {
+    position: relative;
+  
+    padding: 60px 0;
+  }
+  
+  .mission {
+    padding: 40px 0 0 0;
+  }
+  
+  .project-news {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  
+  h4 {
+    margin-bottom: 50px;
+  }
+  
+  .last-projects {
+    padding-top: 60px;
+  }
+  
+  .last-projects h3 {
+    margin-bottom: 40px;
+  }
+  
+  .last-projects ul {
+    margin-bottom: 40px;
+  }
+  
+  .footer-inner {
+    padding: 50px 0 40px;
+  }
+  
+  .contact	{
+		float: none;
+		max-width: 90%;
+		margin: 0 auto;
+	}
 }
