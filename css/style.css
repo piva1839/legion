@@ -41,6 +41,10 @@ img {
 	vertical-align: bottom;
 }
 
+:focus {
+outline: none;
+}
+
 body a:hover {
   color: #00d4ac;
 }
@@ -475,7 +479,7 @@ h4 {
 .event {
 	position: relative;
 	width: 73%;
-	height: 71%;
+	height: 73%;
 	margin: 57px auto 0;
 	
 	background: #ffffff;
@@ -506,7 +510,7 @@ h4 {
 }
 
 .event-title {
-	padding-top: 80px;
+	padding-top: 95px;
 	padding-bottom: 15px;
 	margin-top: 50px;
 	
@@ -615,7 +619,7 @@ h4 {
   margin-bottom: 20px;
   
   font-family: "GothaProBol", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 19px;
   font-weight: 600;
 	color: #ffffff;
@@ -639,8 +643,6 @@ h4 {
 
 .last-news-about {
 	margin-bottom: 35px;
-	
-	cursor: pointer;
 }
 
 .last-news-date {
@@ -665,10 +667,14 @@ h4 {
 	line-height: 18px;
 	color: #ffffff;
 	
+	cursor: pointer;
 	opacity: 0.9;
 }
 
 .all-news {
+	display: inline-block;
+	margin-top: 15px;
+	
 	font-family: "GothaProBol", sans-serif;
   font-size: 16px;
 	font-weight: 600;
@@ -681,20 +687,20 @@ h4 {
 .last-projects {
   position: relative;
   
-  padding-top: 65px;
+  padding-top: 115px;
 }
 
 .last-projects::before {
   content: "";
   position: absolute;
-  top: -60px;
+  top: -80px;
   
   display: block;
   width: 100%;
-  height: 155px;
+  height: 230px;
   
-  background: url("../img/grafbg.png") repeat-y;
-  background-size: cover;
+  background: url("../img/grafbg.png") repeat-x;
+
 }
 
 .last-projects::after {
@@ -815,9 +821,9 @@ h4 {
 }
 
 .footer {
-  background: url("../img/contactbg.jpg") repeat-y;
+  background: url("../img/contactbg.jpg");
   background-size: 100% cover;
-  background-position: left;
+  background-position: center;
 }
 
 .footer ul {
@@ -825,13 +831,14 @@ h4 {
 }
 
 .footer-inner {
-  padding: 110px 0 60px;
+  padding: 95px 0 60px;
 }
 
 .footlogo {
   float: left;
   
   width: 48%;
+	margin-left: 20px;
 }
 
 .footlogo img {
@@ -866,7 +873,7 @@ h4 {
 .submenu a {
   font-family: "GothaProReg", sans-serif;
   font-size: 17px;
-  line-height: 32px;
+  line-height: 33px;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
@@ -874,6 +881,151 @@ h4 {
   opacity: 0.8;
 }
 
-.social {
-background: #236b60;
-}  
+.contact {
+	margin-right: 23px;
+}
+
+.contact fieldset {
+	border: none;
+}
+
+.contact .info {
+	margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+	padding: 5px 10px;
+	
+	font-family: "GothaProReg", sans-serif;
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+	
+	outline:none;
+	resize: none;
+}
+
+.name-area {
+	width: 190px;
+	height: 37px;
+	
+	background: url("../img/inputleft.png") no-repeat;
+	border: none;
+}
+
+.male-area {
+	width: 190px;
+	height: 37px;
+	
+	background: url("../img/inputright.png") no-repeat;
+	border: none;
+}
+
+.text-area {
+	width: 393px;
+	height: 90px;
+	margin: 8px 0 3px;
+	
+	background: url("../img/textarea.png") no-repeat;
+	border: none;
+}
+
+.send-btn {
+	position: relative;
+	
+	min-width: 190px;
+	height: 38px;
+	padding: 10px 10px 10px 30px;
+	
+	background: url("../img/sendbtnbg.png") no-repeat;
+	background-size: 100%;
+	border: none;
+	
+	font-family: "GothaProBol", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #47b596;
+  text-transform: uppercase;
+	
+	cursor: pointer;
+}
+
+.send-btn:before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 24px;
+	
+	display: block;
+	width: 14px;
+	height: 11px;
+	
+	background: url("../img/sendbuttondec.png") no-repeat;
+}
+
+.more-info {
+	padding: 15px 0 20px;
+	
+	background: #236b60;
+}
+
+.more-info li {
+	display: inline-block;
+	
+	vertical-align: bottom;
+}
+
+.copyright {
+	width: 60%;
+	margin-right: -5px;
+	
+	font-family: "GothaProReg", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #d9ecea;
+	text-align: left;
+}
+
+.socials {
+	width: 40%;
+	
+	text-align: right;
+}
+
+.socials a {
+	display: inline-block;
+	
+	width: 30px;
+	height: 25px;
+	margin-left: 10px;
+	
+	vertical-align: top;
+	font-size: 0;
+}
+
+.socials .fb {
+	background: url("../img/socials.png") no-repeat;
+	background-position: 9px 0;
+}
+
+.socials .tw {
+	background: url("../img/socials.png") no-repeat;
+	background-position: -40px 0;
+}
+
+.socials .gl {
+	background: url("../img/socials.png") no-repeat;
+	background-position: -90px 0;
+}
+
+.socials .yb {
+	background: url("../img/socials.png") no-repeat;
+	background-position: -139px 0;
+}
+
+.socials a:hover {
+	opacity: 0.7;
+}
